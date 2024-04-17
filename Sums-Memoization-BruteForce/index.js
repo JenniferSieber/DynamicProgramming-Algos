@@ -35,6 +35,7 @@ const canSum = (target, numArr, memo = {}) => {
   memo[target] = false;
   return false;
 }
+
 console.log(canSum(7, [2, 3])); // true
 console.log(canSum(7, [5, 3, 4, 7])) // true
 console.log(canSum(8, [2, 3, 5])) // true
@@ -112,13 +113,11 @@ const bestSumBF = (target, numArr) => {
   return shortestCombo;
 }
 
-
 console.log(bestSumBF(7, [5, 3, 4, 7])) // [7]
 console.log(bestSumBF(8, [2, 3, 5])) // [3, 5]
 console.log(bestSumBF(8, [1,4,5])) // [4,4]
 // console.log(bestSumBF(100, [1,2,5,25])) // [25,25,25,25]
 // console.log(bestSumBF(700, [7, 14])) // [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
-
 
 console.log(`3. bestSum - Memoization`)
 const bestSum = (target, numArr, memo = {}) => {
@@ -142,7 +141,6 @@ const bestSum = (target, numArr, memo = {}) => {
   memo[target] = shortestCombo;
   return shortestCombo;
 }
-
 
 console.log(bestSum(7, [5, 3, 4, 7])) // [7]
 console.log(bestSum(8, [2, 3, 5])) // [3, 5]
