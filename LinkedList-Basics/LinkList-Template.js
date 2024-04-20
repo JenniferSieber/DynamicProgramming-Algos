@@ -1,3 +1,4 @@
+// Linked List Template Code
 class Node {
   constructor(val) {
     this.val = val;
