@@ -1,10 +1,7 @@
 // Challenge: 
 //        build algorithm for auto correct engine
 // getNearbyWords('gi', ) ---> ['hi', 'go']
-
 // Helper Functions contrived--- only working for the ex hi, go & nearby chars on keyboard returned in array
-
-
 /** 
  * A function that accepts a letter and returns list of all nearby characters
  * @param {str} letter the character the user typed in
@@ -46,7 +43,6 @@ return false
 // console.log(isWord('go')) //t
 // console.log(isWord('bye')) //f
 // console.log(isWord('')) //f
-
 
   /** 
  * A function to find all the permutations of the letters passed in
